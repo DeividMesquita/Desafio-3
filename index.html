@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assents/css/style.css" />
 
     <!--FONTE POPPINS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--BOOTSTRAP-->
     <link
@@ -25,20 +28,216 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+      integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
+      crossorigin="anonymous"
+    />
+
     <title>Anuário do Ceará</title>
   </head>
   <body>
     <header class="c-navbar">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="row">
           <nav class="c-navbar__menu">
-            <div class="c-navbar__burger"></div>
-            <div class="c-navbar__logo"></div>
-            <div class="c-navbar__search"></div>
+            <div class="c-navbar__burger">
+              <figure class="m-0">
+                <img src="/assents/img/menu-mobile.svg" alt="" />
+              </figure>
+            </div>
+            <div class="c-navbar__logo">
+              <figure class="m-0">
+                <img src="/assents/img/logo-anuário.svg" alt="" />
+              </figure>
+            </div>
+            <div class="c-navbar__search">
+              <figure class="m-0">
+                <img src="/assents/img/lupa.svg" alt="" />
+              </figure>
+            </div>
           </nav>
         </div>
       </div>
     </header>
+
+    <section class="c-section-subpagina">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="c-section-subpagina__content">
+            <div class="c-section-subpagina__titulo">
+              <h3 class="m-0">Fortaleza</h3>
+            </div>
+            <div class="c-section-subpagina__list">
+              <ul class="c-section-subpagina__links m-0">
+                <li>
+                  <a href="#">Fortaleza em Síntese</a>
+                </li>
+                <li>
+                  <a href="#">Contribuintes ISS (2021)</a>
+                </li>
+                <li>
+                  <a href="#">Prefeitura</a>
+                </li>
+                <li>
+                  <a href="#">Mapas</a>
+                </li>
+                <li>
+                  <a href="#">Organograma</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-section-breadcrumb">
+      <div class="container">
+        <div class="row">
+          <div class="c-section-breadcrumb__links">
+            <ul class="c-section-breadcrumb__list">
+              <li>
+                <a href="#" class="c-section-breadcrumb__a"
+                  >Início
+                  <figure class="m-0">
+                    <img src="/assents/img/breadcrumb-icon.svg" alt="" />
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="c-section-breadcrumb__a"
+                  >Fortaleza
+                  <figure class="m-0">
+                    <img src="/assents/img/breadcrumb-icon.svg" alt="" />
+                  </figure>
+                </a>
+              </li>
+              <li><p>Mapas</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-section-accordion">
+      <div class="container">
+        <div class="row">
+          <h1 class="c-section-accordion__titulo">Mapas</h1>
+        </div>
+        <div class="accordion_area">
+          <!--ACCORDION 1-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Territórios Administrativos de Fortaleza
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa1.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!--ACCORDION 2-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Região Metropolitana de Fortaleza
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa2.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!--ACCORDION 3-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Índice de Cobertura de Esgoto de Fortaleza
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa3.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!--ACCORDION 4-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Faixas Exclusivas de Fortaleza
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa4.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!--ACCORDION 5-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Divisão das Regionais de Fortaleza
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa5.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <!--ACCORDION 6-->
+          <div class="accordion_box">
+            <h3 class="acc_trigger">
+              <figure class="m-0">
+                <img src="/assents/img/icon-mais.svg" alt="" />
+              </figure>
+              Áreas Integradas de Segurança (AIS) da Capital
+            </h3>
+            <div class="acc_container">
+              <figure>
+                <img
+                  src="/assents/img/mapa6.jpg"
+                  alt="Territórios Administrativos de Fortaleza"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="assents/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

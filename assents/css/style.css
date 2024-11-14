@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/*HEADER NAV BAR*/
+
+.c-navbar {
+    background-color: #FFFFFF;
+}
+
+.c-navbar__menu {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-navbar__burger {
+    width: 30px;
+    height: 24px;
+}
+
+.c-navbar__logo {
+    width: 139px;
+    height: 51px;
+}
+
+.c-navbar__search {
+    width: 24px;
+    height: 24px;
+}
+
+/*SECTION SUBPAGINA*/
+.c-section-subpagina {
+    background-color: #B34353;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.c-section-subpagina__content {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.c-section-subpagina__titulo {
+    text-align: center;
+}
+
+.c-section-subpagina__titulo h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.c-section-subpagina__list {
+    align-items: center;
+
+}
+
+.c-section-subpagina__links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.c-section-subpagina__links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*SECTION BREADCRUMB*/
+
+.c-section-breadcrumb__content {
+    display: flex;
+    align-items: center;
+}
+
+.c-section-breadcrumb__list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.c-section-breadcrumb__list p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+}
+
+.c-section-breadcrumb__list a {
+    color: #B34353;
+}
+
+.c-section-breadcrumb__a {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*SECTION ACCORDION*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-section-accordion__titulo {
+    font-size: 30px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.accordion_box {
+    border: 1px solid gray;
+    padding: 0 15px 1px;
+}
+
+.accordion_box .active{
+
+}
+
+.acc_trigger {
+    padding: 15px 40px 15px 0;
+    margin: 0;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+    gap: 15px;
+    align-items: center;
+}
+
+.acc_container {
+    display: none;
+}
+
+
+.acc_container img{
+    width: 100%;
+}
+
+
+@media (max-width:570px) {
+
+    .c-section-subpagina__content {
+        height: 40px;
+    }
+
+
+    .c-section-subpagina__list {
+        display: none;
+    }
+}
