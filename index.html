@@ -30,29 +30,36 @@
 
     <!--FONT AWESOME-->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
-      integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
-      crossorigin="anonymous"
-    />
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  rel="stylesheet"
+/>
+
 
     <title>Anuário do Ceará</title>
   </head>
   <body>
+
+    <!--HEADER-->
     <header class="c-navbar">
       <div class="container-fluid">
         <div class="row">
           <nav class="c-navbar__menu">
+
+            <!--ICONE HAMBURGER-->
             <div class="c-navbar__burger">
               <figure class="m-0">
                 <img src="/assents/img/menu-mobile.svg" alt="" />
               </figure>
             </div>
+
+            <!--LOGO-->
             <div class="c-navbar__logo">
               <figure class="m-0">
                 <img src="/assents/img/logo-anuário.svg" alt="" />
               </figure>
             </div>
+
+            <!--ICONE PESQUISA-->
             <div class="c-navbar__search">
               <figure class="m-0">
                 <img src="/assents/img/lupa.svg" alt="" />
@@ -63,15 +70,20 @@
       </div>
     </header>
 
+    <!--SUBPAGINA-->
     <section class="c-section-subpagina">
       <div class="container-fluid">
         <div class="row">
           <div class="c-section-subpagina__content">
+
+            <!--SUBPAGINA TITULO-->
             <div class="c-section-subpagina__titulo">
               <h3 class="m-0">Fortaleza</h3>
             </div>
+
+            <!--SUBPAGINA LISTA-->
             <div class="c-section-subpagina__list">
-              <ul class="c-section-subpagina__links m-0">
+              <ul class="c-section-subpagina__links m-0 p-0">
                 <li>
                   <a href="#">Fortaleza em Síntese</a>
                 </li>
@@ -93,12 +105,12 @@
         </div>
       </div>
     </section>
-
+    <!--ACESSO RAPIDO-->
     <section class="c-section-breadcrumb">
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
           <div class="c-section-breadcrumb__links">
-            <ul class="c-section-breadcrumb__list">
+            <ul class="c-section-breadcrumb__list p-0">
               <li>
                 <a href="#" class="c-section-breadcrumb__a"
                   >Início
@@ -115,25 +127,28 @@
                   </figure>
                 </a>
               </li>
-              <li><p>Mapas</p></li>
+              <li><p class="m-0">Mapas</p></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+
+    <!--ACCORDION-->
     <section class="c-section-accordion">
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
-          <h1 class="c-section-accordion__titulo">Mapas</h1>
+          <!--TITULO ACCORDION-->
+          <h1 class="c-section-accordion__titulo m-0">Mapas</h1>
         </div>
+
+        <!--AREA ACCORDION-->
         <div class="accordion_area">
           <!--ACCORDION 1-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Territórios Administrativos de Fortaleza
             </h3>
             <div class="acc_container">
@@ -149,9 +164,7 @@
           <!--ACCORDION 2-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Região Metropolitana de Fortaleza
             </h3>
             <div class="acc_container">
@@ -167,9 +180,7 @@
           <!--ACCORDION 3-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Índice de Cobertura de Esgoto de Fortaleza
             </h3>
             <div class="acc_container">
@@ -185,9 +196,7 @@
           <!--ACCORDION 4-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Faixas Exclusivas de Fortaleza
             </h3>
             <div class="acc_container">
@@ -203,9 +212,7 @@
           <!--ACCORDION 5-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Divisão das Regionais de Fortaleza
             </h3>
             <div class="acc_container">
@@ -221,9 +228,7 @@
           <!--ACCORDION 6-->
           <div class="accordion_box">
             <h3 class="acc_trigger">
-              <figure class="m-0">
-                <img src="/assents/img/icon-mais.svg" alt="" />
-              </figure>
+              <i class="fa-solid fa-plus"></i>
               Áreas Integradas de Segurança (AIS) da Capital
             </h3>
             <div class="acc_container">
@@ -239,7 +244,31 @@
       </div>
     </section>
 
+    <!--FOOTER-->
+    <footer class="c-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="c-footer__content">
+            <div class="c-footer__caixa">
+              <figure class="c-footer__logo m-0">
+                <a href="#"><img src="assents/img/logo-anuário footer.svg" alt="logo"></a>
+              </figure>
+              <ul class="c-footer__list m-0 p-0">
+                <li class="c-footer__links">Expediente</li>
+                <li class="c-footer__links">Agradecimentos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--SCRIPTS JQUERY E JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script src="assents/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </body>
 </html>

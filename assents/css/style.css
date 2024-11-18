@@ -5,11 +5,22 @@
     font-family: "Poppins", serif;
 }
 
+body {
+    margin-top: 160px;
+}
+
 /*HEADER NAV BAR*/
 
 .c-navbar {
     background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .c-navbar__menu {
     height: 80px;
@@ -38,7 +49,13 @@
 .c-section-subpagina {
     background-color: #B34353;
     box-shadow: 0px 3px 6px #00000029;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
+
 
 .c-section-subpagina__content {
     height: 80px;
@@ -74,12 +91,31 @@
     line-height: 22px;
 }
 
+.c-section-subpagina__links li a:active {
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+.c-section-subpagina__links li a.selected {
+    border-bottom: 4px solid white;
+    /* Listra branca embaixo do link selecionado */
+    padding-bottom: 7px;
+    /* Ajuste o padding se necessário */
+}
+
+
 .c-section-subpagina__links a {
     text-decoration: none;
+    transition: border-bottom 0.2s ease;
     color: #FFFFFF;
 }
 
 /*SECTION BREADCRUMB*/
+
+.c-section-breadcrumb {
+    margin-top: 160px;
+}
+
 
 .c-section-breadcrumb__content {
     display: flex;
@@ -111,27 +147,68 @@
 }
 
 /*SECTION ACCORDION*/
-.container {
+
+.c-section-accordion {
+    margin-top: 75px;
+}
+
+
+.container-xxl {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .c-section-accordion__titulo {
     font-size: 30px;
     line-height: 21px;
     font-weight: 700;
+
 }
 
 .accordion_box {
-    border: 1px solid gray;
-    padding: 0 15px 1px;
+    border: none;
+    border-top: 1px solid #ACACAC;
 }
 
-.accordion_box .active{
+.accordion_box h3 {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+}
 
+.acc_trigger h3 {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* Estado ativo (selecionado) */
+.accordion_box.active i {
+    background-color: #B34353;
+
+}
+
+.accordion_box.active h3 {
+    color: #B34353;
+}
+
+.acc_trigger i {
+    background-color: #333;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.acc_trigger i.fa-minus {
+    transform: rotate(180deg);
 }
 
 .acc_trigger {
@@ -146,24 +223,125 @@
     align-items: center;
 }
 
+.acc_trigger i {
+    transition: transform 0.3s ease;
+}
+
 .acc_container {
     display: none;
 }
 
 
-.acc_container img{
+.acc_container img {
     width: 100%;
 }
 
+/*FOOTER*/
 
+.c-footer {
+    background-color: #B34353;
+    margin-top: 50px;
+}
+
+.c-footer__content {
+    height: 80px;
+}
+
+.c-footer__caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.c-footer__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.c-footer__links {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/*RESPONSIVO TABLET*/
+@media (max-width:768px) {
+
+    .accordion_box h3 {
+        font-size: 18px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+
+    .acc_trigger i {
+        width: 14px;
+        height: 14px;
+        font-size: 7px;
+    }
+
+    /*FOOTER*/
+
+
+    .c-footer__content {
+        height: 100px;
+    }
+
+    .c-footer__caixa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .c-footer__list {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        color: #FFFFFF;
+    }
+
+    .c-footer__links {
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+
+/*RESPONSIVO MOBILE*/
 @media (max-width:570px) {
+
+    .c-navbar__menu {
+        height: 60px;
+    }
+
+    .c-section-subpagina {
+        top: 60px;
+    }
 
     .c-section-subpagina__content {
         height: 40px;
+
     }
 
 
     .c-section-subpagina__list {
         display: none;
+    }
+
+    .c-section-breadcrumb__list {
+        margin: 0;
+    }
+
+    .acc_trigger i {
+        width: 14px;
+        height: 14px;
     }
 }
