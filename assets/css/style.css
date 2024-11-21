@@ -9,6 +9,10 @@ body {
     margin-top: 160px;
 }
 
+.c-main {
+    min-height: calc(100vh - 240px);
+}
+
 /*HEADER NAV BAR*/
 
 .c-navbar {
@@ -93,11 +97,10 @@ body {
 
 .c-section-subpagina__links li a:active {
     border-bottom: 2px solid white;
-    padding-bottom: 2px;
 }
 
 .c-section-subpagina__links li a.selected {
-    border-bottom: 4px solid white;
+    border-bottom: 2px solid white;
     /* Listra branca embaixo do link selecionado */
     padding-bottom: 7px;
     /* Ajuste o padding se necessário */
@@ -105,9 +108,15 @@ body {
 
 
 .c-section-subpagina__links a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
     text-decoration: none;
     transition: border-bottom 0.2s ease;
     color: #FFFFFF;
+}
+
+.c-section-subpagina__links a:hover {
+    border-bottom: 2px solid white;
 }
 
 /*SECTION BREADCRUMB*/
@@ -153,12 +162,14 @@ body {
 }
 
 
-.container-xxl {
-    max-width: 800px;
+.w__820 {
+    max-width: 844px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 0 12px;
+
 }
 
 .c-section-accordion__titulo {
@@ -240,7 +251,6 @@ body {
 
 .c-footer {
     background-color: #B34353;
-    margin-top: 50px;
 }
 
 .c-footer__content {
@@ -276,7 +286,7 @@ body {
 
     .accordion_box h3 {
         font-size: 18px;
-        line-height: 33px;
+        line-height: 22px;
         font-weight: 700;
     }
 
@@ -288,6 +298,9 @@ body {
 
     /*FOOTER*/
 
+    .c-footer {
+        margin-top: 20px;
+    }
 
     .c-footer__content {
         height: 100px;
@@ -314,6 +327,15 @@ body {
     }
 }
 
+@media (max-width:704px) {
+    .c-section-subpagina__list {
+        display: none;
+    }
+    .c-section-subpagina__content {
+        height: 50px;
+    }
+}
+
 
 /*RESPONSIVO MOBILE*/
 @media (max-width:570px) {
@@ -328,20 +350,22 @@ body {
 
     .c-section-subpagina__content {
         height: 40px;
-
     }
 
-
-    .c-section-subpagina__list {
-        display: none;
+    .c-section-breadcrumb {
+        margin-top: 130px;
     }
 
     .c-section-breadcrumb__list {
         margin: 0;
     }
 
+    .c-section-accordion {
+        margin-top: 50px;
+    }
+
     .acc_trigger i {
-        width: 14px;
-        height: 14px;
+        min-width: 14px;
+        height: 14px
     }
 }
